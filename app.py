@@ -91,7 +91,7 @@ with st.sidebar:
 
 st.title("📚 EDULLM - PERSONALISED EDUCATION PATHWAYS AND CURRICULUM GUIDANCE")
 
-st.write("Hello! I am EduLLM, your personalized education assistant. Ask me anything about career paths, courses, and curriculum guidance! 💡")
+
 
 # Technical Overview Section
 st.subheader("🛠️ Technical Overview")
@@ -118,7 +118,7 @@ if career_category:
 
 if st.session_state.vector_store:
     if "chat_history" not in st.session_state:
-          st.session_state.chat_history = [AIMessage(content="Hello, I am a EduLLM. How can I assist you today?")]
+          st.session_state.chat_history = [AIMessage(content="Hello! I am EduLLM, your personalized education assistant. Ask me anything about career paths, courses, and curriculum guidance! 💡")]
 
     user_query = st.chat_input("Ask me a question about the content...")
     if user_query:
